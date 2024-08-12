@@ -10,7 +10,7 @@ math: true
 
 现有一个投资组合，其基准组合为:70%中证800，20%债券，10%现金，如下：
 
-![](images\ricequant\p.png)
+![](images/ricequant/p.png)
 
 基金经理主动投资，对资产权重进行调整。假设基准组合收益率为$r$。
 
@@ -89,9 +89,9 @@ R^e &= R^p - R^b \\
 
 通过分析$w_i^p - w_i^b$，可看出行业是超配还是低配。看$AR_i$大说明行业板块选择准，看$SR_i$大说明选股能力强。
 
-![](images\ricequant\1.png)
+![](images/ricequant/1.png)
 
-![](images\ricequant\2.png)
+![](images/ricequant/2.png)
 
 从上面两图可以看到，基金超配了非银金融、商业贸易、医药生物、电气设备，低配了电子、现金等。而在医药生物板块中，选择收益占比很高，说明这一板块选股能力强。
 
@@ -122,4 +122,4 @@ $$R^{e}_T = \sum_{i=1}^{T}[R^{e}_i \prod_{j=1}^{i-1}(1+R_t^p) \prod_{k=i+1}^{T}(
 
 实证分析、公式详细递推过程，见华泰证券报告：
 
-[华泰证券深度研究：Brinson绩效归因模型原理与实践](images\ricequant\20210221-华泰证券-华泰证券深度研究：Brinson绩效归因模型原理与实践.pdf)
+[华泰证券深度研究：Brinson绩效归因模型原理与实践](images/ricequant/20210221-华泰证券-华泰证券深度研究：Brinson绩效归因模型原理与实践.pdf)
