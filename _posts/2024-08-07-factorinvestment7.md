@@ -122,4 +122,4 @@ $$R^{e}_T = \sum_{i=1}^{T}[R^{e}_i \prod_{j=1}^{i-1}(1+R_t^p) \prod_{k=i+1}^{T}(
 
 实证分析、公式详细递推过程，见华泰证券报告：
 
-[华泰证券深度研究：Brinson绩效归因模型原理与实践](images/ricequant/20210221-华泰证券-华泰证券深度研究：Brinson绩效归因模型原理与实践.pdf)
+[华泰证券深度研究：Brinson绩效归因模型原理与实践](images\ricequant\20210221-华泰证券-华泰证券深度研究：Brinson绩效归因模型原理与实践.pdf)
