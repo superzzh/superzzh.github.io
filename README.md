@@ -65,3 +65,11 @@ This work is published under [MIT][mit] License.
 ```console
 $ bundle exec jekyll s
 ```
+
+## git command
+
+```console
+$ git add .
+$ git commit -m "some words"
+$ git push
+```
