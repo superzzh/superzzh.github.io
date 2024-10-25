@@ -102,7 +102,7 @@ foo
 
 ```
 
-除了我在文章里介绍的这些，pathlib 模块还提供了非常多有用的方法，强烈建议去 [官方文档]((https://docs.python.org/3/library/pathlib.html#module-pathlib)) 详细了解一下。
+除了我在文章里介绍的这些，pathlib 模块还提供了非常多有用的方法，强烈建议去 [官方文档](https://docs.python.org/3/library/pathlib.html#module-pathlib) 详细了解一下。
 
 如果上面这些都不足以让你动心，那么我再多给你一个使用 pathlib 的理由：[PEP-519](https://www.python.org/dev/peps/pep-0519/) 里定义了一个专门用于“文件路径”的新对象协议，这意味着从该 PEP 生效后的 Python 3.6 版本起，pathlib 里的 Path 对象，可以和以前绝大多数只接受字符串路径的标准库函数兼容使用：
 
@@ -161,7 +161,10 @@ print(count_nine('small_file.txt'))
 df2if283rkwefh... <剩余 5GB 大小> ...
 ```
 
-如果我们继续使用前面的 `count_nine` 函数去统计这个大文件里 `9` 的个数。那么在我的笔记本上，这个过程会足足花掉 **65** 秒，并在执行过程中吃掉机器 **2GB** 内存 [[注1]]((#annot1))。
+如果我们继续使用前面的 `count_nine` 函数去统计这个大文件里 `9` 的个数。那么在我的笔记本上，这个过程会足足花掉 **65** 秒，并在执行过程中吃掉机器 **2GB** 内存。
+
+> 视机器空闲内存的多少，这个过程可能会消耗比 2GB 更多的内存。
+{: .prompt-tip}
 
 ### 使用 read 方法分块读取
 
@@ -369,6 +372,3 @@ def parse(self, source, parser=None):
 - 难以编写测试的代码，通常也是需要改进的代码
 - 让函数依赖“类文件对象”可以提升函数的适用面和可组合性
 
-## 注解
-
-1. <a id="annot1"></a>视机器空闲内存的多少，这个过程可能会消耗比 2GB 更多的内存。

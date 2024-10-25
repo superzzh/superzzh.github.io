@@ -38,7 +38,10 @@ Python 是一门高级编程语言，**它所提供的内置容器类型，都�
 
 所有的内建容器类型都不限制容量。如果你愿意，你可以把递增的数字不断塞进一个空列表，最终撑爆整台机器的内存。
 
-在 Python 语言的实现细节里，列表的内存是按需分配的[[注1]](#annot1)，当某个列表当前拥有的内存不够时，便会触发内存扩容逻辑。而分配内存是一项昂贵的操作。虽然大部分情况下，它不会对你的程序性能产生什么严重的影响。但是当你处理的数据量特别大时，很容易因为内存分配拖累整个程序的性能。
+在 Python 语言的实现细节里，列表的内存是按需分配的，当某个列表当前拥有的内存不够时，便会触发内存扩容逻辑。而分配内存是一项昂贵的操作。虽然大部分情况下，它不会对你的程序性能产生什么严重的影响。但是当你处理的数据量特别大时，很容易因为内存分配拖累整个程序的性能。
+
+> Python 这门语言除了 CPython 外，还有许许多多的其他版本实现。如无特别说明，本文以及 “Python 工匠” 系列里出现的所有 Python 都特指 Python 的 C 语言实现 CPython。
+{: .prompt-tip}
 
 还好，Python 早就意识到了这个问题，并提供了官方的问题解决指引，那就是：**“变懒”**。
 
@@ -89,12 +92,20 @@ def validate_name(name):
 
 Python 是一门“[鸭子类型](https://en.wikipedia.org/wiki/Duck_typing)”语言：*“当看到一只鸟走起来像鸭子、游泳起来像鸭子、叫起来也像鸭子，那么这只鸟就可以被称为鸭子。”* 所以，当我们说某个对象是什么类型时，在根本上其实指的是： **这个对象满足了该类型的特定接口规范，可以被当成这个类型来使用。** 而对于所有内置容器类型来说，同样如此。
 
-打开位于 [collections](https://docs.python.org/3.7/library/collections.html) 模块下的 [abc](https://docs.python.org/3/library/collections.abc.html)*（“抽象类 Abstract Base Classes”的首字母缩写）* 子模块，可以找到所有与容器相关的接口（抽象类）[[注2]](#annot2)定义。让我们分别看看那些内建容器类型都满足了什么接口：
+打开位于 [collections](https://docs.python.org/3.7/library/collections.html) 模块下的 [abc](https://docs.python.org/3/library/collections.abc.html)*（“抽象类 Abstract Base Classes”的首字母缩写）* 子模块，可以找到所有与容器相关的接口（抽象类）定义。让我们分别看看那些内建容器类型都满足了什么接口：
+
+> Python 里没有类似其他编程语言里的“Interface 接口”类型，只有类似的“抽象类”概念。为了表达方便，后面的内容均统一使用“接口”来替代“抽象类”。
+{: .prompt-tip}
 
 - **列表（list）**：满足 `Iterable`、`Sequence`、`MutableSequence` 等接口
 - **元组（tuple）**：满足 `Iterable`、`Sequence`
 - **字典（dict）**：满足 `Iterable`、`Mapping`、`MutableMapping` [[注3]](#annot3)
 - **集合（set）**：满足 `Iterable`、`Set`、`MutableSet` [[注4]](#annot4)
+
+> 有没有只实现了 Mapping 但又不是 MutableMapping 的类型？试试 [MappingProxyType({})](https://docs.python.org/3/library/types.html#types.MappingProxyType)
+{: .prompt-tip}
+> 有没有只实现了 Set 但又不是 MutableSet 的类型？试试 [frozenset()](https://docs.python.org/3/library/stdtypes.html#frozenset)
+{: .prompt-tip}
 
 每个内置容器类型，其实就是满足了多个接口定义的组合实体。比如所有的容器类型都满足 `“可被迭代的”（Iterable`） 这个接口，这意味着它们都是“可被迭代”的。但是反过来，不是所有“可被迭代”的对象都是容器。就像字符串虽然可以被迭代，但我们通常不会把它当做“容器”来看待。
 
@@ -384,9 +395,4 @@ print(numbers)
 - 使用 `next()` 函数配合迭代器可以高效完成很多事情，但是也需要注意“枯竭”问题
 - collections、itertools 模块里有非常多有用的工具，快去看看吧！
 
-## 注解
 
-1. <a id="annot1"></a>Python 这门语言除了 CPython 外，还有许许多多的其他版本实现。如无特别说明，本文以及 “Python 工匠” 系列里出现的所有 Python 都特指 Python 的 C 语言实现 CPython
-2. <a id="annot2"></a>Python 里没有类似其他编程语言里的“Interface 接口”类型，只有类似的“抽象类”概念。为了表达方便，后面的内容均统一使用“接口”来替代“抽象类”。
-3. <a id="annot3"></a>有没有只实现了 Mapping 但又不是 MutableMapping 的类型？试试 [MappingProxyType({})](https://docs.python.org/3/library/types.html#types.MappingProxyType)
-4. <a id="annot4"></a>有没有只实现了 Set 但又不是 MutableSet 的类型？试试 [frozenset()](https://docs.python.org/3/library/stdtypes.html#frozenset)
