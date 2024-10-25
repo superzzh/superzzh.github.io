@@ -7,12 +7,6 @@ tags: [编程技术]
 
 ## 前言
 
-> 这是 “Python 工匠”系列的第 6 篇文章。[[查看系列所有文章]](https://github.com/piglei/one-python-craftsman)
-
-<div style="text-align: center; color: #999; margin: 14px 0 14px;font-size: 12px;">
-<img src="https://www.piglei.com/static/uploaded/2019/03/bernard-hermant-665508-unsplash_w1280.jpg" width="100%" />
-</div>
-
 如果你用 Python 编程，那么你就无法避开异常，因为异常在这门语言里无处不在。打个比方，当你在脚本执行时按 `ctrl+c` 退出，解释器就会产生一个 `KeyboardInterrupt` 异常。而 `KeyError`、`ValueError`、`TypeError` 等更是日常编程里随处可见的老朋友。
 
 异常处理工作由“捕获”和“抛出”两部分组成。“捕获”指的是使用 `try ... except` 包裹特定语句，妥当的完成错误流程处理。而恰当的使用 `raise` 主动“抛出”异常，更是优雅代码里必不可少的组成部分。
@@ -309,21 +303,3 @@ def upload_avatar(request):
 - 只捕获可能会抛出异常的语句，避免含糊的捕获逻辑
 - 保持模块异常类的抽象一致性，必要时对底层异常类进行包装
 - 使用“上下文管理器”可以简化重复的异常处理逻辑
-
-看完文章的你，有没有什么想吐槽的？请留言或者在 [项目 Github Issues](https://github.com/piglei/one-python-craftsman) 告诉我吧。
-
-[>>>下一篇【7.编写地道循环的两个建议】](7-two-tips-on-loop-writing.md)
-
-[<<<上一篇【5.让函数返回结果的技巧】](5-function-returning-tips.md)
-
-## 附录
-
-- 题图来源: Photo by Bernard Hermant on Unsplash
-- 更多系列文章地址：<https://github.com/piglei/one-python-craftsman>
-
-系列其他文章：
-
-- [所有文章索引 [Github]](https://github.com/piglei/one-python-craftsman)
-- [Python 工匠：善用变量改善代码质量](https://www.piglei.com/articles/python-using-variables-well/)
-- [Python 工匠：编写条件分支代码的技巧](https://www.piglei.com/articles/python-else-block-secrets/)
-- [Python 工匠：让程序返回结果的技巧](https://www.piglei.com/articles/function-returning-tips/)

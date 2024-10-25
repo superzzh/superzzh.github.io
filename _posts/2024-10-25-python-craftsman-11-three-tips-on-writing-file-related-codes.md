@@ -7,12 +7,6 @@ tags: [编程技术]
 
 ## 前言
 
-> 这是 “Python 工匠”系列的第 11 篇文章。[[查看系列所有文章]](https://github.com/piglei/one-python-craftsman)
-
-<div style="text-align: center; color: #999; margin: 14px 0 14px;font-size: 12px;">
-<img src="https://www.piglei.com/static/uploaded/2019/06/devon-divine-1348025-unsplash_1280.jpg" width="100%" />
-</div>
-
 在这个世界上，人们每天都在用 Python 完成着不同的工作。而文件操作，则是大家最常需要解决的任务之一。使用 Python，你可以轻松为他人生成精美的报表，也可以用短短几行代码快速解析、整理上万份数据文件。
 
 当我们编写与文件相关的代码时，通常会关注这些事情：**我的代码是不是足够快？我的代码有没有事半功倍的完成任务？** 在这篇文章中，我会与你分享与之相关的几个编程建议。我会向你推荐一个被低估的 Python 标准库模块、演示一个读取大文件的最佳方式、最后再分享我对函数设计的一点思考。
@@ -374,24 +368,6 @@ def parse(self, source, parser=None):
 - 使用 `iter(callable, sentinel)` 可以在一些特定场景简化代码
 - 难以编写测试的代码，通常也是需要改进的代码
 - 让函数依赖“类文件对象”可以提升函数的适用面和可组合性
-
-看完文章的你，有没有什么想吐槽的？请留言或者在 [项目 Github Issues](https://github.com/piglei/one-python-craftsman) 告诉我吧。
-
-[>>>下一篇【12.写好面向对象代码的原则（上）】](12-write-solid-python-codes-part-1.md)
-
-[<<<上一篇【10.做一个精通规则的玩家】](10-a-good-player-know-the-rules.md)
-
-## 附录
-
-- 题图来源: Photo by Devon Divine on Unsplash
-- 更多系列文章地址：<https://github.com/piglei/one-python-craftsman>
-
-系列其他文章：
-
-- [所有文章索引 [Github]](https://github.com/piglei/one-python-craftsman)
-- [Python 工匠：编写条件分支代码的技巧](https://www.piglei.com/articles/python-else-block-secrets/)
-- [Python 工匠：异常处理的三个好习惯](https://www.piglei.com/articles/three-rituals-of-exceptions-handling/)
-- [Python 工匠：编写地道循环的两个建议](https://www.piglei.com/articles/two-tips-on-loop-writing/)
 
 ## 注解
 

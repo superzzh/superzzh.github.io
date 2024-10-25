@@ -7,12 +7,6 @@ tags: [编程技术]
 
 ## 前言
 
-> 这是 “Python 工匠”系列的第 15 篇文章。[[查看系列所有文章]](https://github.com/piglei/one-python-craftsman)
-
-<div style="text-align: center; color: #999; margin: 14px 0 14px;font-size: 12px;">
-<img src="https://www.piglei.com/static/uploaded/2020/06/jessica-ruscello-DoSDQvzjeH0-unsplash_w1440.jpg" width="100%" />
-</div>
-
 2016 年，Linux 操作系统的创造者 Linus Torvalds 参加了一场[TED 访谈节目](https://www.ted.com/talks/linus_torvalds_the_mind_behind_linux/transcript?language=en)。整个节目的前半部分，主要是他在讲如何在家光着膀子写出 Linux 的故事，没有涉及太多编程相关的事情。
 
 不过在访谈快结束时，突然出现了一个有趣的环节。主持人向 Linus 提问道：“你曾说过更愿意和那些有着好的 **代码品味** 的人共事，那在你眼里，什么才是好的代码品味？”
@@ -459,20 +453,3 @@ while True:
 - 使用 `or` 可以简化默认值边界处理逻辑，但也要注意不要掉入陷阱
 - 不要手动去做数据校验，使用 `pydantic` 或其他的数据校验模块
 - 利用取模、绝对值计算等方式，可以简化一些特定的边界处理逻辑
-
-看完文章的你，有没有什么想吐槽的？请留言或者在 [项目 Github Issues](https://github.com/piglei/one-python-craftsman) 告诉我吧。
-
-[<<<上一篇【14.写好面向对象代码的原则（下）】](14-write-solid-python-codes-part-3.md)
-
-> 为了避免内容重复，在系列第 4 篇“容器的门道”里出现的 EAPF 相关内容会被删除，并入到本文中。
-
-## 附录
-
-- 题图来源: Photo by Jessica Ruscello on Unsplash
-- 更多系列文章地址：<https://github.com/piglei/one-python-craftsman>
-
-系列其他文章：
-
-- [所有文章索引 [Github]](https://github.com/piglei/one-python-craftsman)
-- [Python 工匠：写好面向对象代码的原则（上）](https://www.piglei.com/articles/write-solid-python-codes-part-1/)
-- [Python 工匠：让函数返回结果的技巧](https://www.piglei.com/articles/function-returning-tips/)

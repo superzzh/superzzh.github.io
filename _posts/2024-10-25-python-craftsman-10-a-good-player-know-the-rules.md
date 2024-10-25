@@ -7,12 +7,6 @@ tags: [编程技术]
 
 ## 前言
 
-> 这是 “Python 工匠”系列的第 10 篇文章。[[查看系列所有文章]](https://github.com/piglei/one-python-craftsman)
-
-<div style="text-align: center; color: #999; margin: 14px 0 14px;font-size: 12px;">
-<img src="https://www.piglei.com/static/uploaded/2019/05/jeshoots-com-632498-unsplash_w1280.jpg" width="100%" />
-</div>
-
 编程，其实和玩电子游戏有一些相似之处。你在玩不同游戏前，需要先学习每个游戏的不同规则，只有熟悉和灵活运用游戏规则，才更有可能在游戏中获胜。
 
 而编程也是一样，不同编程语言同样有着不一样的“规则”。大到是否支持面向对象，小到是否可以定义常量，编程语言的规则比绝大多数电子游戏要复杂的多。
@@ -352,21 +346,3 @@ Python 世界有着一套非常复杂的规则，这些规则的涵盖范围包�
 - 使用 dataclasses 模块可以让你少写很多代码
 - 使用 `__format__` 方法替代自己定义的字符串格式化方法
 - 在容器类对象上使用 `__len__`、`__getitem__` 方法，而不是自己实现
-
-看完文章的你，有没有什么想吐槽的？请留言或者在 [项目 Github Issues](https://github.com/piglei/one-python-craftsman) 告诉我吧。
-
-[>>>下一篇【11.高效操作文件的三个建议】](11-three-tips-on-writing-file-related-codes.md)
-
-[<<<上一篇【9.一个关于模块的小故事】](9-a-story-on-cyclic-imports.md)
-
-## 附录
-
-- 题图来源: Photo by JESHOOTS.COM on Unsplash
-- 更多系列文章地址：<https://github.com/piglei/one-python-craftsman>
-
-系列其他文章：
-
-- [所有文章索引 [Github]](https://github.com/piglei/one-python-craftsman)
-- [Python 工匠：编写条件分支代码的技巧](https://www.piglei.com/articles/python-else-block-secrets/)
-- [Python 工匠：异常处理的三个好习惯](https://www.piglei.com/articles/three-rituals-of-exceptions-handling/)
-- [Python 工匠：编写地道循环的两个建议](https://www.piglei.com/articles/two-tips-on-loop-writing/)

@@ -7,12 +7,6 @@ tags: [编程技术]
 
 ## 前言
 
-> 这是 “Python 工匠”系列的第 7 篇文章。[[查看系列所有文章]](https://github.com/piglei/one-python-craftsman)
-
-<div style="text-align: center; color: #999; margin: 14px 0 14px;font-size: 12px;">
-<img src="https://www.piglei.com/static/uploaded/2019/04/lai-man-nung-1205465-unsplash_w1280.jpg" width="100%" />
-</div>
-
 循环是一种常用的程序控制结构。我们常说，机器相比人类的最大优点之一，就是机器可以不眠不休的重复做某件事情，但人却不行。而**“循环”**，则是实现让机器不断重复工作的关键概念。
 
 在循环语法方面，Python 表现的即传统又不传统。它虽然抛弃了常见的 `for (init; condition; incrment)` 三段式结构，但还是选择了 `for` 和 `while` 这两个经典的关键字来表达循环。绝大多数情况下，我们的循环需求都可以用  `for <item> in <iterable>` 来满足，`while <condition>` 相比之下用的则更少些。
@@ -305,21 +299,3 @@ def notify_nonsleep_users_in_last_30days():
 - 使用生成器函数可以轻松定义自己的修饰函数
 - 循环内部，是一个极易发生“代码膨胀”的场地
 - 请使用生成器函数将循环内不同职责的代码块解耦出来，获得更好的灵活性
-
-看完文章的你，有没有什么想吐槽的？请留言或者在 [项目 Github Issues](https://github.com/piglei/one-python-craftsman) 告诉我吧。
-
-[>>>下一篇【8.使用装饰器的技巧】](8-tips-on-decorators.md)
-
-[<<<上一篇【6.异常处理的三个好习惯】](6-three-rituals-of-exceptions-handling.md)
-
-## 附录
-
-- 题图来源: Photo by Lai man nung on Unsplash
-- 更多系列文章地址：<https://github.com/piglei/one-python-craftsman>
-
-系列其他文章：
-
-- [所有文章索引 [Github]](https://github.com/piglei/one-python-craftsman)
-- [Python 工匠：容器的门道](https://www.piglei.com/articles/mastering-container-types/)
-- [Python 工匠：编写条件分支代码的技巧](https://www.piglei.com/articles/python-else-block-secrets/)
-- [Python 工匠：异常处理的三个好习惯](https://www.piglei.com/articles/three-rituals-of-exceptions-handling/)

@@ -7,12 +7,6 @@ tags: [编程技术]
 
 ## 前言
 
-> 这是 “Python 工匠”系列的第 9 篇文章。[[查看系列所有文章]](https://github.com/piglei/one-python-craftsman)
-
-<div style="text-align: center; color: #999; margin: 14px 0 14px;font-size: 12px;">
-<img src="https://www.piglei.com/static/uploaded/2019/05/ricardo-gomez-angel-669574-unsplash_w1280.jpg" width="100%" />
-</div>
-
 模块（Module）是我们用来组织 Python 代码的基本单位。很多功能强大的复杂站点，都由成百上千个独立模块共同组成。
 
 虽然模块有着不可替代的用处，但它有时也会给我们带来麻烦。比如，当你接手一个新项目后，刚展开项目目录。第一眼就看到了攀枝错节、难以理解的模块结构，那你肯定会想： *“这项目也太难搞了。”* 😂
@@ -180,21 +174,3 @@ from .msg_utils import send_sms
 - 合理的模块结构不是一成不变的，应该随着项目发展调整
 - 遇到问题时，不要选**“简单但有缺陷”**的那个方案，要选**“麻烦但正确”**的那个
 - 整个项目内的模块间依赖关系流向，应该是单向的，不能有环形依赖存在
-
-看完文章的你，有没有什么想吐槽的？请留言或者在 [项目 Github Issues](https://github.com/piglei/one-python-craftsman) 告诉我吧。
-
-[>>>下一篇【10.做一个精通规则的玩家】](10-a-good-player-know-the-rules.md)
-
-[<<<上一篇【8.使用装饰器的技巧】](8-tips-on-decorators.md)
-
-## 附录
-
-- 题图来源: Photo by Ricardo Gomez Angel on Unsplash
-- 更多系列文章地址：<https://github.com/piglei/one-python-craftsman>
-
-系列其他文章：
-
-- [所有文章索引 [Github]](https://github.com/piglei/one-python-craftsman)
-- [Python 工匠：编写条件分支代码的技巧](https://www.piglei.com/articles/python-else-block-secrets/)
-- [Python 工匠：异常处理的三个好习惯](https://www.piglei.com/articles/three-rituals-of-exceptions-handling/)
-- [Python 工匠：编写地道循环的两个建议](https://www.piglei.com/articles/two-tips-on-loop-writing/)

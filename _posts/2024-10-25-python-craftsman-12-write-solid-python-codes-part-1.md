@@ -7,12 +7,6 @@ tags: [编程技术]
 
 ## 前言
 
-> 这是 “Python 工匠”系列的第 12 篇文章。[[查看系列所有文章]](https://github.com/piglei/one-python-craftsman)
-
-<div style="text-align: center; color: #999; margin: 14px 0 14px;font-size: 12px;">
-<img src="https://www.piglei.com/static/uploaded/2019/06/kelly-sikkema-Z9AU36chmQI-unsplash_w1280.jpg" width="100%" />
-</div>
-
 Python 是一门支持多种编程风格的语言，面对相同的需求，拥有不同背景的程序员可能会写出风格迥异的 Python 代码。比如一位习惯编写 C 语言的程序员，通常会定义一大堆函数来搞定所有事情，这是[“过程式编程”](https://en.wikipedia.org/wiki/Procedural_programming)的思想。而一位有 Java 背景的程序员则更倾向于设计许多个相互关联的类*（class）*，这是 [“面向对象编程（后简称 OOP）”](https://en.wikipedia.org/wiki/Object-oriented_programming)。
 
 虽然不同的编程风格各有特点，无法直接比较。但是 OOP 思想在现代软件开发中起到的重要作用应该是毋庸置疑的。
@@ -574,21 +568,3 @@ def main():
 - 使用子类继承的方式可以让类遵守 O 原则
 - 通过定义算法类，并进行依赖注入，也可以让类遵循 O 原则
 - 将数据与逻辑分离，使用数据驱动的方式也是改造代码的好办法
-
-看完文章的你，有没有什么想吐槽的？请留言或者在 [项目 Github Issues](https://github.com/piglei/one-python-craftsman) 告诉我吧。
-
-[>>>下一篇【13.写好面向对象代码的原则（中）】](13-write-solid-python-codes-part-2.md)
-
-[<<<上一篇【11.高效操作文件的三个建议】](11-three-tips-on-writing-file-related-codes.md)
-
-## 附录
-
-- 题图来源: Photo by Kelly Sikkema on Unsplash
-- 更多系列文章地址：<https://github.com/piglei/one-python-craftsman>
-
-系列其他文章：
-
-- [所有文章索引 [Github]](https://github.com/piglei/one-python-craftsman)
-- [Python 工匠：让函数返回结果的技巧](https://www.piglei.com/articles/function-returning-tips/)
-- [Python 工匠：编写地道循环的两个建议](https://www.piglei.com/articles/two-tips-on-loop-writing/)
-- [Python 工匠：高效操作文件的三个建议](https://www.piglei.com/articles/three-tips-on-writing-file-related-codes/)

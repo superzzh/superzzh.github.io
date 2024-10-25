@@ -7,12 +7,6 @@ tags: [编程技术]
 
 ## 前言
 
-> 这是 “Python 工匠”系列的第 14 篇文章。[[查看系列所有文章]](https://github.com/piglei/one-python-craftsman)
-
-<div style="text-align: center; color: #999; margin: 14px 0 14px;font-size: 12px;">
-<img src="https://www.piglei.com/static/uploaded/2020/02/carolina-garcia-tavizon-w1280.jpg" width="100%" />
-</div>
-
 在这篇文章中，我将继续介绍 SOLID 原则剩下的两位成员：**I（接口隔离原则）** 和 **D（依赖倒置原则）**。为了方便，这篇文章将会使用先 D 后 I 的顺序。
 
 ## D：依赖倒置原则
@@ -531,21 +525,3 @@ def is_new_visitor(cookies: Dict) -> bool:
 - 设计接口就是设计抽象
 - 违反接口隔离原则也可能会导致违反单一职责与里式替换原则
 - 写更小的类、写更小的接口在大多数情况下是个好主意
-
-看完文章的你，有没有什么想吐槽的？请留言或者在 [项目 Github Issues](https://github.com/piglei/one-python-craftsman) 告诉我吧。
-
-[>>>下一篇【15.在边界处思考】](15-thinking-in-edge-cases.md)
-
-[<<<上一篇【13.写好面向对象代码的原则（中）】](13-write-solid-python-codes-part-2.md)
-
-## 附录
-
-- 题图来源: Photo by Carolina Garcia Tavizon on Unsplash
-- 更多系列文章地址：<https://github.com/piglei/one-python-craftsman>
-
-系列其他文章：
-
-- [所有文章索引 [Github]](https://github.com/piglei/one-python-craftsman)
-- [Python 工匠：写好面向对象代码的原则（上）](https://www.piglei.com/articles/write-solid-python-codes-part-1/)
-- [Python 工匠：写好面向对象代码的原则（中）](https://www.piglei.com/articles/write-solid-python-codes-part-2/)
-- [Python 工匠：写好面向对象代码的原则（下）](https://www.piglei.com/articles/write-solid-python-codes-part-3/)
