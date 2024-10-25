@@ -46,10 +46,7 @@ Python 语言虽然拥有类、继承、多态等核心 OOP 特性，但和那�
 
 我经常会去上面看一些热门文章，但我觉得每次打开浏览器访问有点麻烦。所以，我准备编写一个脚本，自动抓取 HN 首页 Top5 的新闻标题与链接，并用纯文本的方式写入到文件。方便自己用其他工具阅读。
 
-<div style="text-align: center; color: #999; margin: 14px 0 14px;font-size: 12px;">
-<img src="https://www.piglei.com/static/uploaded/2019/06/hackernews_frontpage.png" width="100%" />
-图：Hacker News 首页截图
-</div>
+![](/images/python/hackernews_frontpage.png)
 
 编写爬虫几乎是 Python 天生的拿手好戏。利用 requests、lxml 等模块提供的好用功能，我可以轻松实现上面的需求。下面是我第一次编写好的代码：
 

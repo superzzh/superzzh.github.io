@@ -29,10 +29,7 @@ tags: [编程技术]
 
 我想要按照来源域名来分组统计条目数量，这样就能知道哪个站在 HN 上最受欢迎。
 
-<div style="text-align: center; color: #999; margin: 14px 0 14px;font-size: 12px;">
-<img src="https://www.piglei.com/static/uploaded/2020/02/SOLID_3_hn.jpg" width="100%" />
-图：Hacker News 条目来源截图
-</div>
+![](/images/python/SOLID_3_hn.jpg)
 
 这个需求非常简单，使用 `requests`、`lxml` 模块可以很快完成任务：
 
@@ -88,10 +85,7 @@ Site: latimes.com | Count: 1
 
 `SiteSourceGrouper` 是我们的核心类。为了完成任务，它需要使用 `requests` 模块获取首页内容、`lxml` 模块解析标题。所以，现在的依赖关系是“正向”的，高层模块 `SiteSourceGrouper` 依赖低层模块 `requests`、`lxml`。
 
-<div style="text-align: center; color: #999; margin: 14px 0 14px;font-size: 12px;">
-<img src="https://www.piglei.com/static/uploaded/2020/02/SOLID_D_before.png" width="100%" />
-图：SiteSourceGrouper 依赖 requests、lxml
-</div>
+![](/images/python/SOLID_D_before.png)
 
 也许现在这张图在你眼里看起来特别合理。正常的依赖关系不就应该是这样的吗？别着急，我们还没给代码写单元测试呢。
 
@@ -253,10 +247,7 @@ def main():
 
 做完这些修改后，让我们再看看现在的模块依赖关系：
 
-<div style="text-align: center; color: #999; margin: 14px 0 14px;font-size: 12px;">
-<img src="https://www.piglei.com/static/uploaded/2020/02/SOLID_D_after.png" width="100%" />
-图：SiteSourceGrouper 和 RemoteHNWebPage 都依赖抽象层 HNWebPage
-</div>
+![](/images/python/SOLID_D_after.png)
 
 在图中，高层模块不再依赖低层模块，二者同时依赖于抽象概念 `HNWebPage`，低层模块的依赖箭头和之前相比倒过来了。所以我们称其为 **依赖倒置**。
 
@@ -426,10 +417,7 @@ class SiteAchiever:
 
 代码写到这，让我们回头看看上个例子里的 *条目来源分组类 `SiteSourceGrouper`* 。
 
-<div style="text-align: center; color: #999; margin: 14px 0 14px;font-size: 12px;">
-<img src="https://www.piglei.com/static/uploaded/2020/02/SOLID_I_before.png" width="100%" />
-图：成功违反了 I 协议
-</div>
+![](/images/python/SOLID_I_before.png)
 
 当我修改完抽象类后，虽然 `SiteSourceGrouper` 仍然依赖着 `HNWebPage`，但它其实只使用了 `get_text` 这一个方法而已，其他  `get_size`、`get_generated` 这些它 **不使用的方法也成为了它的依赖。**
 
@@ -471,10 +459,7 @@ class HNWebPage(ContentOnlyHNWebPage):
 
 同时，对于 `LocalHNWebPage` 类来说，它也只需要实现那个只返回的文本的 `ContentOnlyHNWebPage` 就行。
 
-<div style="text-align: center; color: #999; margin: 14px 0 14px;font-size: 12px;">
-<img src="https://www.piglei.com/static/uploaded/2020/02/SOLID_I_after.png" width="100%" />
-图：实施接口隔离后的结果
-</div>
+![](/images/python/SOLID_I_after.png)
 
 ### 一些不容易发现的违反情况
 

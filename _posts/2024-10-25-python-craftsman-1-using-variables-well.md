@@ -73,11 +73,11 @@ tags: [编程技术]
 
 对于 str、list、tuple、dict 这些复杂类型，很难有一个统一的规则让我们可以通过名字去猜测变量类型。比如 `headers`，既可能是一个头信息列表，也可能是包含头信息的 dict。
 
-对于这些类型的变量名，最推荐的方式，就是编写规范的文档，在函数和方法的 document string 中，使用 sphinx 格式（[Python 官方文档使用的文档工具](http://www.sphinx-doc.org/en/stable/)）来标注所有变量的类型。 
+对于这些类型的变量名，最推荐的方式，就是编写规范的文档，在函数和方法的 document string 中，使用 sphinx 格式（[Python 官方文档使用的文档工具](https://www.sphinx-doc.org/en/stable/)）来标注所有变量的类型。 
 
 ### 3. 适当使用『匈牙利命名法』
 
-第一次知道『[匈牙利命名法](https://en.wikipedia.org/wiki/Hungarian_notation)』，是在 [Joel on Software 的一篇博文](http://www.joelonsoftware.com/articles/Wrong.html)中。简而言之，匈牙利命名法就是把变量的『类型』缩写，放到变量名的最前面。
+第一次知道『[匈牙利命名法](https://en.wikipedia.org/wiki/Hungarian_notation)』，是在 [Joel on Software 的一篇博文](https://www.joelonsoftware.com/articles/Wrong.html)中。简而言之，匈牙利命名法就是把变量的『类型』缩写，放到变量名的最前面。
 
 关键在于，这里说的变量『类型』，并非指传统意义上的 int/str/list 这种类型，而是指那些和你的代码业务逻辑相关的类型。
 

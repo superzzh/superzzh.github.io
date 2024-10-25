@@ -325,8 +325,6 @@ t3()
     t3 called 2 times.
 
 
-推荐阅读：[decorator 第三方库](http://decorator.readthedocs.io/en/latest/)
-
 
 ```python
 from decorator import decorator
