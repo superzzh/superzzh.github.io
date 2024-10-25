@@ -99,8 +99,8 @@ Python 是一门“[鸭子类型](https://en.wikipedia.org/wiki/Duck_typing)”�
 
 - **列表（list）**：满足 `Iterable`、`Sequence`、`MutableSequence` 等接口
 - **元组（tuple）**：满足 `Iterable`、`Sequence`
-- **字典（dict）**：满足 `Iterable`、`Mapping`、`MutableMapping` [[注3]](#annot3)
-- **集合（set）**：满足 `Iterable`、`Set`、`MutableSet` [[注4]](#annot4)
+- **字典（dict）**：满足 `Iterable`、`Mapping`、`MutableMapping` 
+- **集合（set）**：满足 `Iterable`、`Set`、`MutableSet` 
 
 > 有没有只实现了 Mapping 但又不是 MutableMapping 的类型？试试 [MappingProxyType({})](https://docs.python.org/3/library/types.html#types.MappingProxyType)
 {: .prompt-tip}
