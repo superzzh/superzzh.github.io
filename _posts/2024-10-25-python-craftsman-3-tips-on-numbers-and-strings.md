@@ -1,6 +1,6 @@
 ---
 title: Python工匠-03：使用数字与字符串的技巧
-date: 2024-10-25 12:00:00 +0800
+date: 2024-10-25 12:03:00 +0800
 categories: [Python, Python工匠]
 tags: [编程技术]
 ---

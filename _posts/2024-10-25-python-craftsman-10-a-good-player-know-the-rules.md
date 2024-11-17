@@ -1,6 +1,6 @@
 ---
 title: Python工匠-10：做一个精通规则的玩家
-date: 2024-10-25 12:00:00 +0800
+date: 2024-10-25 12:10:00 +0800
 categories: [Python, Python工匠]
 tags: [编程技术]
 ---

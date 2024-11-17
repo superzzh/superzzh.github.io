@@ -1,6 +1,6 @@
 ---
 title: Python工匠-08：使用装饰器的技巧
-date: 2024-10-25 12:00:00 +0800
+date: 2024-10-25 12:08:00 +0800
 categories: [Python, Python工匠]
 tags: [编程技术]
 ---

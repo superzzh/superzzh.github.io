@@ -1,6 +1,6 @@
 ---
 title: Python工匠-12：写好面向对象代码的原则（上）
-date: 2024-10-25 12:00:00 +0800
+date: 2024-10-25 12:12:00 +0800
 categories: [Python, Python工匠]
 tags: [编程技术]
 ---

@@ -1,6 +1,6 @@
 ---
 title: Python工匠-01：善用变量来改善代码质量
-date: 2024-10-25 12:00:00 +0800
+date: 2024-10-25 12:01:00 +0800
 categories: [Python, Python工匠]
 tags: [编程技术]
 ---

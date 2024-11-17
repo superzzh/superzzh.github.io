@@ -1,6 +1,6 @@
 ---
 title: Python工匠-02：编写条件分支代码的技巧
-date: 2024-10-25 12:00:00 +0800
+date: 2024-10-25 12:02:00 +0800
 categories: [Python, Python工匠]
 tags: [编程技术]
 ---
